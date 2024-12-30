@@ -1,0 +1,157 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family: sans-serif;
+  width:100%;
+  background-color: #2E3440; /* Dark Slate */
+  color: #ECEFF4; /* Light Snow */
+}
+
+#main-doc{
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+  gap:20px;  
+  position: relative;
+}
+
+#navbar{
+  width:25%;
+  height:100vh;
+  border: 1px solid #D8DEE9;
+  position: sticky;
+  top:0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#navbar header{
+  height: 100px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #D8DEE9; 
+}
+#navbar a{  
+  text-decoration:none;
+  color: #88C0D0; /* Soft Cyan */
+  text-decoration: none; 
+  padding: 10px 15px; 
+  font-weight: bold;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+#navbar a:hover{
+  color: #ECEFF4; 
+  background-color: #4C566A; 
+  border-radius: 4px; 
+}
+
+.main-menu li{
+  width: 100%;
+  height: calc((100vh - 100px) / 9);
+  text-align: center;  
+}
+
+.menu-heading{
+  width: 100%;
+  height: calc((100vh - 100px) / 9);
+  font-size: 20px;
+  text-align: center;
+}
+
+#navbar ul{
+  list-style-type: none;
+  list-style-position: inside;
+}
+
+/* styles for sub-heading inside our menu */
+.menu-sub-heading{
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom:12px;
+}
+
+/* content and sections */
+.main-content{
+  width: 75%;
+  padding:10px;
+  margin-left:auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid #D8DEE9;
+  
+}
+
+.main-content::before{
+  content: "";
+  margin-top: 20px;
+}
+
+header,a{
+  color: #88C0D0; /* Soft Cyan */
+  margin-bottom: 12px;
+}
+
+p{
+  color: #D8DEE9; /* Light Grey */
+  line-height: 1.6;
+  font-size: 18px; /* Adjust based on preference */
+  margin-bottom: 16px; /* Spacing between paragraphs */
+}
+
+.main-content ul{
+  list-style-position: inside ;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  list-style-type: disc;
+}
+
+.main-content li{
+  color: #D8DEE9; /* Light Grey */
+  margin-bottom: 8px; /* Space between list items */
+}
+
+.main-content li::marker {
+  color: #88C0D0; /* Soft Cyan for bullets */
+}
+
+hr{
+  margin: 24px 0px;
+}
+/* style the code block */
+.code-block{
+  background-color: #4C566A; /* Slate Grey */
+  color: #A3BE8C; /* Soft Green */
+  padding: 0.1em 0.2em;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size:0.9rem;
+  height: fit-content;
+  white-space: pre-line;
+}
+
+  @media screen and (max-width: 672px) {
+
+    /* the sidebar and content are stacked on top of each other */
+        #main-doc {
+            flex-direction: column;
+        }
+    
+    /* takes the full width of the document */
+        #navbar {
+            width: 100%;
+            position: relative;
+        }
+    
+    /* takes the full width of document */
+        .main-content {
+            width: 100%;
+        }
+    }

@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-width=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>HTML Tutorial</title>
+</head>
+<body>  
+<main id="main-doc">
+  <!-- a sidebar consisting of menu of documentation page -->
+  <nav id="navbar">
+    <header>HTML Tutorial</header>
+    <div class="menu-heading">Table of Contents</div>
+    <!-- main menu of table of content -->
+    <ul class="main-menu">      
+              <li><a class="nav-link" href="#Introduction_to_HTML">Introduction to HTML</a></li>
+              <li><a class="nav-link" href="#Basic_Structure_of_an_HTML_Document">Basic Structure of an HTML Document</a></li>
+              <li><a class="nav-link" href="#HTML_Elements_and_Tags">HTML Elements and Tags</a></li>
+              <li><a class="nav-link" href="#Common_HTML_Tags">Common HTML Tags</a></li>
+              <li><a class="nav-link" href="#HTML_Forms">HTML Forms</a></li>
+              <li><a class="nav-link" href="#HTML_Semantic_Elements">HTML Semantic Elements</a></li>
+              <li><a class="nav-link" href="#HTML_Media(Images-Audio-Video)">HTML Media(Images-Audio-Video)</a></li> 
+              <li><a class="nav-link" href="#References">References</a></li> 
+    </ul>
+  </nav>
+<!-- main content of the documentation page -->
+ <section class="main-content">
+  <section class="main-section" id="Introduction_to_HTML">
+    <header>Introduction to HTML</header>
+    <p>
+      HTML, which stands for HyperText Markup Language, is the foundational language for creating and structuring content on the web. 
+      It allows you to organize text, images, links, and other multimedia elements within a web browser. 
+      The term HyperText refers to the ability to create links between different documents, while Markup means that the language annotates the content, 
+      describing its structure and presentation. HTML is not a programming language; rather, it's a markup language designed to display information in 
+      a web browser in a readable and well-organized format. </p>
+   </section>
+    <hr class="section-break">
+    <section  class="main-section" id="Basic_Structure_of_an_HTML_Document">
+    <header>Basic Structure of an HTML Document</header>
+    <p>The structure of an HTML document is essential for creating a well-functioning webpage. Every HTML document starts with 
+      the &lt;!DOCTYPE html&gt; declaration, which informs the browser about the version of HTML that the page is using. This is followed by the root 
+      &lt;html&gt; element, which encompasses the entire content of the document.
+      Within the &lt;html&gt; element, there are two main sections:
+      </p>
+      <ul>
+        <li>
+          <strong>The</strong>&lt;head&gt;<strong>section</strong>: This contains metadata about the document, such as its title, character set, and links to external stylesheets or scripts. 
+            Metadata does not appear on the webpage but provides essential information to browsers and search engines.
+        </li>
+        <li>
+          <strong>The</strong>&lt;body&gt;<strong>section</strong>: This contains all the content that users will see on the webpage, such as text, images, and interactive elements like forms 
+            and buttons.
+        </li>
+      </ul>
+      <p>Here's a basic example of the structure:</p>
+    <pre class="code-block">
+      <code>
+        &lt;!DOCTYPE html&gt;
+               &lt;html&gt;
+                   &lt;head&gt;
+                       &lt;title&gt;programiz&lt;/title&gt;
+                   &lt;/head&gt;
+                   &lt;body&gt;
+                       &lt;h1&gt;HTML Tutorial&lt;/h1&gt;
+                       &lt;p&gt;You'll learn about HTML.&lt;/p&gt;
+                   &lt;/body&gt;
+               &lt;/html&gt;  
+      </code>
+    </pre>
+      </section>
+      <hr class="section-break">
+      <section class="main-section" id="HTML_Elements_and_Tags">
+        <header>HTML Elements and Tags</header>
+        <p>
+          HTML uses a system of elements, also called tags, to define the structure and content of a webpage. Every element is written between angle 
+          brackets (&lt; and &gt;) and usually comes in pairs: an opening tag (&lt;p&gt;) and a closing tag (&lt;/p&gt;). The content of the element sits between the opening 
+          and closing tags. However, some elements, such as &lt;img&gt; and &lt;br&gt;, are self-closing and do not require a closing tag.
+          Elements can have attributes that provide additional information. For example, an &lt;img&gt; tag can include a src attribute to define the image 
+          source, and an alt attribute to provide alternative text for accessibility:
+        </p>
+        <pre class="code-block">
+          <code>
+              &lt;img src="image.jpg" alt="Description of the image"&gt;
+          </code>
+        </pre>
+      </section>   
+      <hr class="section-break">
+      <section class="main-section" id="Common_HTML_Tags">
+        <header>Common HTML Tags</header>
+        <p>
+          HTML offers a variety of tags to organize and present different types of content. Below are some of the most commonly used tags:
+        </p>
+        <ul>
+          <li><strong>Headings</strong>:HTML provides six levels of headings (&lt;h1&gt; to &lt;h6&gt;), with &lt;h1&gt; being the most important and &lt;h6&gt; the least. 
+            They help structure the content hierarchically and improve SEO.</li>
+          <pre class="code-block">
+            <code>
+                &lt;h1&gt;This is a Main Heading&lt;/h1&gt;
+                &lt;h2&gt;This is a Subheading  &lt;/h2&gt;
+            </code>
+          </pre>
+          <li><strong>Paragraphs</strong>: The &lt;p&gt; tag defines a paragraph of text.</li>
+          <pre class="code-block">
+            <code>
+                &lt;p&gt;This is a paragraph of content.&lt;/p&gt;
+            </code>
+          </pre>
+          <li><strong>Links</strong>: The &lt;a&gt; tag creates hyperlinks. The href attribute defines the destination URL.</li>
+          <pre class="code-block">
+            <code>
+                &lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;
+            </code>
+          </pre>
+          <li><strong>Images</strong>: The &lt;img&gt; tag is used to embed images. It requires the src attribute for the image URL and the alt attribute for 
+            accessibility.</li>
+            <pre class="code-block">
+              <code>
+                  &lt;img src="image.jpg" alt="A description of the image"&gt;
+              </code>
+            </pre>
+            <li>
+             <strong>Divisions and Spans</strong>: The &lt;div&gt; and &lt;span&gt; tags are generic containers used for styling and layout purposes. &lt;div&gt;
+              is a block-level element, while &lt;span&gt; is inline.
+            </li>
+            <pre class="code-block">
+              <code>
+                   &lt;div&gt;This is a block-level element. &lt;/div&gt;
+                   &lt;span&gt;This is an inline element.    &lt;/span&gt;
+              </code>
+            </pre>
+        </ul>      
+        <ul>
+          <li><span>&lt;h1&gt;</span>&mdash; heading of the document</li>
+          <li><span>&lt;p&gt;</span>&mdash;paragraph of the document</li>
+        </ul>
+      </section>
+      <section class="main-section" id="HTML_Forms">
+        <header>HTML Forms</header>
+        <p> HTML forms are used to collect user input and submit it to a server for processing. Forms are an essential component for building interactive 
+          websites, such as those with login systems, search bars, and feedback forms. The &lt;form&gt; element wraps the form controls, such as text fields, 
+          checkboxes, radio buttons, and submit buttons. Key attributes of the &lt;form&gt; tag include:</p>
+          <ul>
+            <li><strong>action</strong>: Specifies the URL where the form data should be sent.</li>
+            <li><strong>method</strong>: Determines how the form data is sent (usually <i>GET</i> or <i>POST</i>).</li>
+          
+        <pre class="code-block">
+          <code>
+            &lt;form action="/submit-form" method="POST"&gt;
+            &lt;label for="name"&gt;Name:&lt;/label&gt;
+            &lt;input type="text" id="name" name="name"&gt;
+              
+            &lt;button type="submit"&gt;Submit&lt;/button&gt;
+            &lt;/form&gt;
+          </code>
+        </pre>
+        <li><strong>Inputs</strong>: The &lt;input&gt; tag is versatile, supporting different types of user input like text, password, checkbox, and radio.</li>
+        <li><strong>Labels</strong>: The &lt;label&gt; tag is used to associate text with form controls, improving accessibility.</li>
+        </ul>        
+      </section>
+      <hr class="section-break" />
+      <section class="main-section" id="HTML_Semantic_Elements">
+        <header>HTML Semantic Elements</header>
+        <p>
+          Semantic HTML refers to using HTML elements that have meaning beyond their appearance. These elements clearly describe their purpose to both 
+          developers and browsers, enhancing the accessibility, SEO, and maintainability of a website. For example, the &lt;header&gt; element defines the 
+          header of a webpage or section, while &lt;article&gt; is used for standalone content, and &lt;footer&gt; defines the footer.
+        </p>
+        <p>Other common semantic elements include:</p>
+        <ul>
+          <li>&lt;nav&gt;: Represents a navigation block, such as a menu.</li>
+          <li>&lt;section&gt;: Defines a thematic grouping of content, typically with a heading.</li>
+          <li>&lt;aside&gt;:Represents content that is tangentially related to the main content, such as sidebars.</li>
+        </ul>
+        <pre class="code-block">
+          <code>
+            &ltarticle&gt;
+              &lt;header&gt;
+               &lt;h1&gt;Article Title&lt;/h1&gt;
+               &lt;p&gt;Published on: January 1, 2024&lt;/p&gt;
+              &lt;/header&gt;
+             &lt;p&gt;This is the main content of the article...&lt;/p&gt;
+            &lt;/article&gt;
+          </code>
+        </pre>        
+      </section>
+     <hr class="section-break" />
+     <section class="main-section" id="HTML_Media(Images-Audio-Video)">
+      <header>HTML Media(Images-Audio-Video)</header>
+      <p>
+        HTML supports multimedia content like images, audio, and video to make webpages more dynamic and engaging.
+      </p>
+      <ul>
+        <li><strong>Images</strong>: The &lt;img&gt; tag is used to display images. You can specify the source (src), alternative text (alt), and size (width 
+          and height).</li>
+          <li><strong>Audio</strong>: HTML5 introduced the &lt;audio&gt; tag for embedding sound files. It supports multiple formats such as MP3, WAV, and OGG.
+          </li>
+          <pre class="code-block">
+            <code>
+              &lt;audio controls&gt;
+              &lt;source src="audiofile.mp3" type="audio/mp3"&gt;
+              &lt;/audio&gt;
+            </code>
+          </pre> 
+          <li><strong>Video</strong>: The &lt;video&gt; tag allows embedding videos. You can control the playback using attributes like controls, autoplay, and 
+            loop.</li>
+            <pre class="code-block">
+              <code>
+                &lt;video controls&gt;
+                &lt;source src="videofile.mp4" type="video/mp4"&gt;
+                  &lt;/video&gt;
+              </code>
+            </pre> 
+            <p>These multimedia elements help in creating rich, interactive experiences for users without relying on external plugins like Flash.</p>
+      </ul>
+     </section>
+     <hr class="section-break"/>
+     <section class="main-section" id="References">
+      <header>References</header>
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" targe="_blank">MDN Web Docs - HTML</a></li>
+        <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools - HTML</a></li>
+      </ul>
+
+     </section>
+ </section> 
+</main>
+</body>
+</html>

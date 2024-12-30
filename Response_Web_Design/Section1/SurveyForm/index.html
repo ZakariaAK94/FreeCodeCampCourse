@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="What will appear in the search engine"/>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Programming Language Survey</title>
+  </head>
+  <body>
+    <h1 id="title"><i>Welcome to this survey.</i> </h1>
+    <p id="description">This survey won't take more than 5min of your time, Thank you so much for your participation. </p>
+        
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+    <div id="fieldRequired">(<span>*</span>) means this filed is required. </div>
+    <fieldset>        
+        <label id="name-label" for="name">Full Name (<span>*</span>):
+            <input type="text" id="name" placeholder="Enter your name" required/>
+        </label>        
+        <label id="email-label" for="email">Email (<span>*</span>):
+            <input type="email" id="email" placeholder="Enter your Email" required/>
+        </label>        
+        <label id="number-label" for="number">Age :
+            <input type="number" id="number" placeholder="Your Age" value="age" min="5" max="120"/>
+        </label>        
+    </fieldset> 
+    <br>
+    <fieldset>
+        <legend>Where do you learn to program (<span>*</span>) :</legend>
+        <select id="dropdown" name=""> 
+        <option value="0">Select one</option>
+        <option value="1">freecodecamp</option>
+        <option value="2">Coursera</option>
+        <option value="3">Youtube</option>
+        <option value="4">ProgrammingAdvice</option>
+        <option value="5">other</option>
+        </select>
+    </fieldset>           
+    <br>
+    <fieldset>
+          <legend>What is your first programming language you learned (<span>*</span>):</legend>
+          
+          <label for="radio1"><input type="radio" id="radio1" name="radio-btn" value="rd1" class="rd-inline" checked />C/C++</label>         
+          <label for="radio2"><input type="radio" id="radio2" name="radio-btn" value="rd2" class="rd-inline" />Java</label>         
+          <label for="radio3"><input type="radio" id="radio3" name="radio-btn" value="rd3" class="rd-inline" />C#</label>         
+          <label for="radio4"><input type="radio" id="radio4" name="radio-btn" value="rd4" class="rd-inline" />Python</label>         
+          <label for="radio5"><input type="radio" id="radio5" name="radio-btn" value="rd5" class="rd-inline" />Javascript</label>         
+        <label for="radio6"><input type="radio" id="radio6" name="radio-btn" value="rd6" class="rd-inline" />HTML & CSS</label>
+    </fieldset>
+    <br>
+    <fieldset>
+          <legend>Why do you want to learn programming (<span>*</span>): </legend>
+           
+          <label for="ch1"><input type="checkbox" id="checkResult" value="1" name="checkResult1"/>Shift career.</label>           
+          <label for="ch2"><input type="checkbox" id="checkResult" value="2" name="checkResult2"/>Grow in your current job.</label>         
+          <label for="ch3"><input type="checkbox" id="checkResult" value="3" name="checkResult3"/>Increase your income.</label>         
+          <label for="ch4"><input type="checkbox" id="checkResult" value="4" name="checkResult4"/>Work from home.</label>           
+          <label for="ch5"><input type="checkbox" id="checkResult" value="5" name="checkResult5"/>Start your own business.</label>           
+          <label for="ch6"><input type="checkbox" id="checkResult" value="6" name="checkResult6"/>Develop problem-solving skills.</label>
+    </fieldset>
+    <fieldset>
+        <label for="profile-picture">Upload a profile picture (<span>*</span>): 
+          <input id="profile-picture" type="file" name="file" />
+        </label>        
+        </label>
+        <label for="bio">Extra information:</label>
+        <textarea id="bio" rows="3" cols="30" placeholder="If you want to add more information..." ></textarea>
+        </label>
+      </fieldset>    
+      <br>
+    <input id="submit" type="submit"/>
+    </form>
+    </body>
+  </html>

@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../DiceGame"
+		},
+		{
+			"path": "../Platformer Game"
+		},
+		{
+			"path": "../Shopping Cart"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CashRegister",
+		"liveServer.settings.port": 5501
+	}
+}

@@ -1,0 +1,117 @@
+:root{
+  box-sizing:border-box;
+  --page-color:rgb(3, 47, 98);;
+  --separator-field: rgba(128, 128, 128, 0.589);
+  --input-color: rgba(128, 128, 128, 0.589);
+  --Written-size: 1.1rem;
+}
+
+body{
+  font-family: Tahoma,sans-serif;
+  height:100vh;
+  width:100vw;
+  color: var(--page-color);
+  font-size: var(--Written-size);
+  background: url(https://images.pexels.com/photos/262713/pexels-photo-262713.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+span{
+color: red;
+}
+hr{
+  display:block;
+}
+
+h1,p{
+  font-family: Georgia, serif;
+  color: var(--page-color);
+  text-align: center;
+  font-weight:bold;
+  margin: 1em auto;
+}
+
+div{
+  font-family: Georgia, serif;
+  color: var(--page-color);
+  margin: 0 auto; 
+}
+
+#fieldRequired{
+  display:inline;
+}
+
+form{
+  width: 80vw;
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 300px;    
+  padding-bottom: 2em;
+  background-color: #d3b78f8c;
+}
+
+fieldset{
+  border:none;
+  padding: 2rem 0 1rem 0;    
+  border-bottom: 2px solid var(--separator-field) ;
+}
+
+label{
+  display:block;
+  margin-left:5px;
+}
+
+input
+{
+  margin: 0.5rem 0 1rem 0;
+  width: 90%;
+  min-height: 2em;
+}
+
+textarea,
+select {
+margin: 10px 0 0.5rem 0;
+width: 90%;
+min-height: 2em;
+}
+
+input, textarea,select {
+  background-color: #7f8887;
+  border: 1px solid var(--input-color);
+  color: #000;
+}
+
+input::placeholder, textarea::placeholder
+{
+  color: rgb(39, 38, 38)
+}
+
+.rd-inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;    
+  display:inline;
+}
+
+#checkResult {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;    
+}
+
+input[type="submit"] {
+  display: block;
+  width: 70%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: var(--Written-size);
+  background-color: var(--input-color);
+  border-color: transparent;
+  min-width: 300px;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
